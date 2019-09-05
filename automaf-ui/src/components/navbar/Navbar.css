@@ -1,0 +1,21 @@
+.nav-wrap {
+    width: 100%;
+    background-color: #282936;
+    position: fixed;
+    top:0px;
+    z-index:100;
+    font-family: 'Montserrat', serif;
+    display:flex;
+    flex-direction: row;
+    height: 4rem;
+}
+
+.nav-header {
+    font-size:1.2rem;
+    margin-left: 15px;
+}
+
+.nav-version {
+    margin-top: 30px;
+    margin-left: 2px;
+}
