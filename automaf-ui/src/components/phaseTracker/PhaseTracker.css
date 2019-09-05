@@ -1,0 +1,106 @@
+.track-wrap {
+    max-height: 4rem;
+    height:4rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background-color: #282936;
+    z-index:100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.track-wrap-left, .track-wrap-right {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.track-wrap p {
+    margin-right: 5px;
+}
+
+.track-graph-wrap {
+    position: relative;
+    width: 15rem;
+    height: 2rem;
+}
+
+.track-graph-line, .track-graph-dots {
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.track-graph-line {
+    margin-top: calc(1rem - 4px);
+    height: 6px;
+    background-image: linear-gradient(to right, #282936 0%, #7183a8 10%, #7183a8 90%, #282936 100%);
+    border-radius: 50px;
+}
+.track-graph-line > div {
+    height: 2px;
+    margin-top: 2px;
+    width:100%;
+    border-radius:50px;
+    background-image: linear-gradient(to right, #282936 0%, white 10%, white 90%, #282936 100%);
+}
+
+.track-graph-dots {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.track-graph-dot:first-child {
+    margin-left: 1.5rem;
+}
+
+.track-graph-dot {
+    min-height: calc(2rem - 4px);
+    min-width: calc(2rem - 4px);
+    border-radius: 4rem;
+    border: 2px solid #7183a8;
+
+    background-color: white;
+    color: black;
+
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.track-graph-dot:hover {
+    transform: scale(1.1);
+}
+
+.track-empty-dot {
+    height: 2rem;
+    width: 1rem;
+}
+
+.track-graph-dot p {
+    margin: 0;
+}
+
+.dot-current {
+    border-color: green;
+}
+
+.phaseButton {
+    padding: 10px;
+    background-color: rgb(235, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all linear 0.1s;
+}
+
+.phaseButton:hover {
+    background-color: rgb(189, 0, 0);
+}

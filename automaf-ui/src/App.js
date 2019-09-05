@@ -1,17 +1,19 @@
 import React from 'react';
 import Navbar from './components/navbar/Navbar';
+import PhaseTracker from './components/phaseTracker/PhaseTracker';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  navigator.geolocation.getCurrentPosition(position => {console.log(position)}, err => {console.log(err)});
   return (
     <div className="body-wrap">
       <Navbar/>
+      <PhaseTracker/>
       <div className="nav-spacer"></div>
+
+      <p>Page content goes here :)</p>
       <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
     </div>
   );
 }

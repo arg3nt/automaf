@@ -1,8 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap");
+
+* {
+  margin:0px;
+  padding:0px;
+}
 
 body {
   background-color: #3d465a;
   color: white;
+  font-family: 'Raleway', sans-serif;
 }
 
 .App-logo {
