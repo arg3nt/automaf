@@ -1,0 +1,30 @@
+{
+  "name": "automaf",
+  "version": "0.1.0",
+  "description": "AutoMaf is an Electron-based desktop application to help mafia GMs run their games more efficiently",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd ../automaf-ui && npm run build && cd - && electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arg3nt/automaf.git"
+  },
+  "keywords": [
+    "Mafia",
+    "Game"
+  ],
+  "author": "Nico Chera",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/arg3nt/automaf/issues"
+  },
+  "homepage": "https://github.com/arg3nt/automaf#readme",
+  "devDependencies": {
+    "electron": "^6.0.7"
+  },
+  "dependencies": {
+    "react": "^16.9.0"
+  }
+}
