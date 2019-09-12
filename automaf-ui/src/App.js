@@ -5,7 +5,6 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  navigator.geolocation.getCurrentPosition(position => {console.log(position)}, err => {console.log(err)});
   return (
     <div className="body-wrap">
       <Navbar/>
