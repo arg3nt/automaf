@@ -10,7 +10,7 @@ export default class PlayerGrid {
      * @param {Array<Player>} players 
      * @param {ActionGrid} grid
      */
-    PlayerGrid(players, grid=null) {
+    constructor(players, grid=null) {
         this.players = players;
         this.grid = grid;
     }
