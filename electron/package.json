@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/arg3nt/automaf#readme",
   "devDependencies": {
-    "electron": "^9.4.0"
+    "electron": "^13.6.6"
   },
   "dependencies": {
     "react": "^16.9.0"
